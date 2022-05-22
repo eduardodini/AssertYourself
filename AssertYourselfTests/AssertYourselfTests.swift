@@ -11,7 +11,7 @@ import XCTest
 class AssertYourselfTests: XCTestCase {
 
     func test_fail() {
-        XCTFail()
+        XCTFail("We have a problem")
     }
 
 }
