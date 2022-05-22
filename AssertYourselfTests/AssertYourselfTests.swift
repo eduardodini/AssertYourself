@@ -54,4 +54,14 @@ class AssertYourselfTests: XCTestCase {
         let actual = "actual"
         XCTAssertEqual(actual, "expected")
     }
+
+    func test_assertEqual_withOptional() {
+        let result: String? = "foo"
+        XCTAssertEqual(result, "foo")
+    }
+
+    func test_floatingPointDanger() {
+        let result = 0.1 + 0.2
+        XCTAssertEqual(result, 0.3)
+    }
 }
