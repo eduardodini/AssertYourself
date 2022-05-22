@@ -50,4 +50,8 @@ class AssertYourselfTests: XCTestCase {
         XCTAssertNil(optionValue)
     }
 
+    func test_assertEqual() {
+        let actual = "actual"
+        XCTAssertEqual(actual, "expected")
+    }
 }
