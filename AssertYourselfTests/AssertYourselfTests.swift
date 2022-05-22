@@ -14,4 +14,8 @@ class AssertYourselfTests: XCTestCase {
         XCTFail("We have a problem")
     }
 
+    func test_fail_withInterpolatedMessage() {
+        let theAnswer = 42
+        XCTFail("The answer to the great question is \(theAnswer)")
+    }
 }
